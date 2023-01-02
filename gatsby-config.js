@@ -1,13 +1,19 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-config/
- */
+const dotenv = require('dotenv')
 
-/**
- * @type {import('gatsby').GatsbyConfig}
- */
+if (process.env.NODE_ENV !== 'production'){
+  dotenv.config()
+}
+
 module.exports = {
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `sn3hoju4payd`,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
+    `gatsby-plugin-image`,
+  ],
   pathPrefix: "/learning",
 }
