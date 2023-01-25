@@ -1,0 +1,130 @@
+.page {
+    min-height: 100vh;
+    background: var(--about_dark);
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 3rem 5rem 3rem;
+    /*align-items: center;*/
+
+}
+.text_title {
+    align-self: flex-start;
+}
+
+.icons_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+}
+
+.icon {
+    width: 320px;
+    height: 70vh;
+    align-self: center;
+
+}
+.intro_content {
+    align-self: center;
+    text-align: center;
+}
+
+@media screen and (min-width: 960px) {
+    .intro {
+        min-height: 70vh;
+        padding: 4rem 8rem 8rem 8rem;
+        display: grid;
+        grid-template-areas:
+            "title title . ."
+            "text text text icon"
+            "text text text icon";
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+
+    .intro_title {
+        grid-area: title;
+        text-align: left;
+    }
+
+    .intro_content {
+        grid-area: text;
+        text-align: left;
+    }
+
+    .icons_container {
+        grid-area: icon;
+
+    }
+    .icon {
+        width: 678px;
+        height: 678px;
+    }
+    .arrow {
+        display: none;
+    }
+
+}
+
+.org_structure {
+    min-height: 80vh;
+    background: var(--secondary_grey);
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 3rem 0 3rem;
+    align-items: center;
+}
+
+.org_structure_title {
+    text-align: center;
+    justify-self: flex-start;
+    padding-bottom: 5rem;
+}
+
+@media screen and (min-width: 960px) {
+    .org_structure {
+        min-height: 80vh;
+        flex-direction: row-reverse;
+        padding: 4rem 8rem 2rem 8rem;
+        /*align-items: center;*/
+        justify-content: space-around;
+    }
+
+    .org_structure_title {
+        text-align: center;
+        align-self: flex-start;
+        padding-bottom: 5rem;
+    }
+
+}
+
+.wdwd {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.ul_content {
+    margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 960px) {
+    .wdwd {
+        width: 50%;
+        margin: auto;
+        align-items: flex-start;
+        justify-content: center;
+        align-content: space-around;
+    }
+
+
+}
