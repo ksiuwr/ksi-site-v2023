@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[678],{6558:function(e,l,t){t.r(l),t.d(l,{default:function(){return n}});var r=t(7294);function n(){return r.createElement("div",null,"Hello world ad people!")}}}]);
+//# sourceMappingURL=component---src-pages-index-js-1c917513c15395f77a87.js.map
