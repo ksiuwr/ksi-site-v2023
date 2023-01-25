@@ -8,12 +8,12 @@ import Phone from "../../../static/assets/svg/phone.svg"
 export default function Index(){
 
     const options =[
-        {id: 0, name: "Adres", src: "/assets/phone.svg"},
-        {id: 1, name: "Tel", src: "/assets/phone.svg"},
-        {id: 2, name: "Mail", src: "/assets/phone.svg"},
-        {id: 3, name: "Instagram", src: "/assets/phone.svg"},
-        {id: 4, name: "Github", src: "/assets/phone.svg"},
-        {id: 5, name: "Facebook", src: "/assets/phone.svg"}
+        {id: 0, name: "Adres", logo: <Phone/>},
+        {id: 1, name: "Tel", logo: <Phone/>},
+        {id: 2, name: "Mail", logo: <Phone/>},
+        {id: 3, name: "Instagram", logo: <Phone/>},
+        {id: 4, name: "Github", logo: <Phone/>},
+        {id: 5, name: "Facebook", logo: <Phone/>}
     ]
 
     return (
@@ -24,7 +24,7 @@ export default function Index(){
                 <ul className={styles.contact_ul}>
                     {options.map(opt => (
                         <li className={styles.listed_elem} key={opt.id}>
-                            <Phone/>
+                            {opt.logo}
                             <p className={"body_1"}>{opt.name}</p>
                         </li>
                     ))}
