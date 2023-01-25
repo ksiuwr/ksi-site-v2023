@@ -1,7 +1,6 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import "../styles/global.css"
-import * as styles from "../styles/footer.component.css"
+import * as styles from "../styles/footer.module.css"
 
 export default function Footer(){
     return(
