@@ -1,0 +1,32 @@
+
+.header_container{
+    background-color: var(--contact_dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 2rem;
+    padding-inline: 10%;
+}
+
+.main_nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.nav_left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
