@@ -1,0 +1,27 @@
+.footer_container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--contact_dark);
+    padding-inline: 10%;
+    padding-block: 2rem;
+}
+
+.footer_info_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.footer_info_element {
+    max-width: 30%;
+}
+
+.footer_info_element > p{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
