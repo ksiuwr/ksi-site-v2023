@@ -11,7 +11,6 @@
 
 }
 
-
 .header_section {
     grid-column-start: col-start 1;
     padding-bottom: 0.5rem;
@@ -32,7 +31,8 @@
     background: var(--text_bone);
 }
 
-.logo {
+
+.logo_container{
     display: none;
 }
 
@@ -46,6 +46,7 @@
     list-style-type: none;
 }
 
+
 @media screen and (min-width: 960px) {
     .page {
         display: grid;
@@ -58,13 +59,23 @@
         grid-column-start: 3;
         grid-column-end: 7;
     }
+
+    .ul_and_logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo_container {
+        display: flex;
+        width: 70%;
+        align-items: center;
+        justify-content: flex-end;
+    }
     .logo {
-        display: block;
-        max-width: 560px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(0, -50%);
+        width: 90%;
+        height: 90%;
     }
     .header_section {
         border-bottom: 1px solid var(--text_bone);
