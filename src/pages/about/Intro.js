@@ -30,9 +30,9 @@ export default function Intro(){
         <section className={styles.intro}>
             <h1 className={`h1_responsive ${styles.intro_title}`}>{data.contentfulSectionFormatting.title}</h1>
             <span className={styles.icons_container}>
-                    <Logo className={styles.icon}/>
-                    <ArrowDown className={styles.arrow}/>
-                </span>
+                <Logo className={styles.icon}/>
+                <ArrowDown className={styles.arrow}/>
+            </span>
             <p className={`body_1 ${styles.intro_content}`}>
                 <div>{renderRichText(data.contentfulSectionFormatting.content)}</div>
                 {/*{data.contentfulSectionFormatting.content}*/}
