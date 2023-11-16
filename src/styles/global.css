@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
+
+/* colors */
+:root {
+  --main-dark: #01223A;
+  --main-light: #2B465A;
+  --main-middle: #122B3D;
+  --text-bone: #F9F6EE;
+  --header-footer: #001A2D;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--text-bone);
+}
