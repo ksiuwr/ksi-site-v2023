@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #01223A;
+}
+
+.project-card.col1 {
+    background-color: #2B465A;
+  }
+.project-card.col2 {
+    background-color: #122B3D;
+  }
+.project-card.col3 {
+    background-color: #01223A;
+  }
+
+.project-card {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+    height: 100vh;
+}
+
+.text-container { 
+    font-family: "Lato";
+    color: white;
+    padding: 2% 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.project-title {
+    margin: 20px 0; 
+    font-size: calc(2vw + 10px);
+    text-align: left;
+    font-weight: 900;
+
+}
+
+.project-image {
+    overflow: hidden visible;
+    max-width: 60%;
+    height: auto;
+    background-color: white;
+    border-radius: 2%;
+}
+
+/* Mobile */
+@media screen and (max-width: 960px) {
+    .text-container {
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+
+    .project-text {
+        font-size: 80%;
+        text-align: justify;
+    }
+
+    .project-title {
+        font-size: 150%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .text-container hr {
+        color: white;
+    }
+
+    .project-image {
+        margin-bottom: 7%;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 960px) {
+    .project-card {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-container {
+        flex: 0 1 48%;
+        max-width: 60%;
+    }
+
+    .project-image {
+        max-width: 30%;
+        margin-left: 5%;
+    }
+
+    .project-text {
+        line-height: 1.5;
+        text-align: justify;
+        margin: 0;
+    }
+
+    .text-container hr {
+        margin: 0 auto;
+        color: white;
+        margin-bottom: 20px;
+    }
+
+    .project-title {
+        white-space: nowrap; 
+    }
+}
