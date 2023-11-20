@@ -4,8 +4,14 @@ import "../styles/global.css"
 import * as styles from '../styles/header.module.css'
 
 //NOTE: tu trzeba będzie zmienić dokąd prowadzą linki
-
-export default function Header(){
+const Header = () =>{
+  const options = [
+    {id: 1, name: 'Członkowie', destination:''},
+    {id: 2, name: 'Projekty',   destination:''},
+    {id: 3, name: 'Partnerzy',  destination:''},
+    {id: 4, name: 'ZOSIA',      destination:''},
+    {id: 5, name: 'Kontakt',    destination:''},
+  ];
   return (
     <div className={styles.header_container}>
       <nav className={styles.main_nav}>
@@ -15,23 +21,15 @@ export default function Header(){
           </li>
         </ul>
         <ul className={styles.nav_right}>
-          <li>
-            <Link>Członkowie</Link>
-          </li>
-          <li>
-            <Link>Projekty</Link>
-          </li>
-          <li>
-            <Link>Partnerzy</Link>
-          </li>
-          <li>
-            <Link>ZOSIA</Link>
-          </li>
-          <li>
-            <Link>Kontakt</Link>
-          </li>
+          {options.map(opt => (
+            <li>
+              <Link to={opt.destination}>{opt.name}</Link>
+            </li>
+          ))}
         </ul>
       </nav>
     </div>
   )
 }
+
+export default Header
