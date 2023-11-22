@@ -20,28 +20,20 @@
 
 .nav_left{
   list-style: none;
-  text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* NOTE:  z jakiegoś powodu to nie działa, gdy link do czegoś prowadzi */
-.nav_left > li >  a{
-  text-decoration: none;
-}
-
 .nav_right{
   list-style: none;
-  text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 1.5rem;
 }
 
-
-/* NOTE:  z jakiegoś powodu to nie działa, gdy link do czegoś prowadzi */
-.nav_right > li > a{
+.nav_left a, .nav_right a{
+  color: inherit;
   text-decoration: none;
 }

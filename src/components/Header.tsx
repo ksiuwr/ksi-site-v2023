@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import "../styles/global.css"
-import * as styles from '../styles/header.module.css'
+const styles = require('../styles/header.module.css')
 
-//NOTE: tu trzeba będzie zmienić dokąd prowadzą linki
+//NOTE: link destinations will have to be changed
 const Header = () =>{
   const options = [
     {id: 1, name: 'Członkowie', destination:''},
@@ -17,7 +17,7 @@ const Header = () =>{
       <nav className={styles.main_nav}>
         <ul className={styles.nav_left}>
           <li>
-            <Link>KSI UWr</Link>
+            <Link to='/'>KSI UWr</Link>
           </li>
         </ul>
         <ul className={styles.nav_right}>
