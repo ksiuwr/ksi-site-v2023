@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import "../styles/global.css"
-const styles = require('../styles/header.module.css')
+import * as styles from '../styles/header.module.css';
 
 //NOTE: link destinations will have to be changed
 const Header = () =>{

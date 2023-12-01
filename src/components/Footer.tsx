@@ -1,6 +1,6 @@
 import React from 'react'
 import "../styles/global.css"
-const styles = require('../styles/footer.module.css')
+import * as styles from '../styles/footer.module.css'
 
 const Footer = () => {
   const options = [
