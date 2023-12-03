@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap");
+@import "colors.css";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.project-card:nth-child(3n - 1) {
+  background-color: var(--background2);
+}
+
+.project-card:nth-child(3n) {
+  background-color: var(--background3);
+}
+
+.project-card:nth-child(3n + 1) {
+  background-color: var(--background1);
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.text-container {
+  font-family: "Lato";
+  color: var(--text-color);
+  padding: 2% 0;   
+  margin: 0 20% 0 20%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.project-title {
+  margin: 20px 0 10px 0;
+  font-size: calc(5vw + 10px);
+  white-space: nowrap;
+  text-align: center;
+}
+
+.project-divider {
+  color: var(--hr-color);
+}
+
+.project-text {
+  font-size: 80%;
+  text-align: justify;
+}
+
+.project-image {
+  margin: 0 0 7% 0;
+  max-width: 60%;
+  height: auto;
+  border-radius: 2%;
+}
+
+/* Desktop */
+@media screen and (min-width: 960px) {
+  .project-card {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-container {
+    flex: 0 1 48%;
+    max-width: 60%;
+    margin: auto 0 auto 0;
+  }
+
+  .project-title {
+    margin: 0 0 20px 0;
+    text-align: left;
+    white-space: nowrap;
+    font-size: calc(2vw + 10px);
+  }
+
+  .project-image {
+    max-height: 50%;
+    max-width: 25%;
+    margin: 5% 0 5% 5%;
+  }
+
+  .project-text {
+    font-size: 100%;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .project-divider {
+    margin: 0 auto 20px;
+  }  
+}

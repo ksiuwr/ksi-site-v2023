@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap");
+@import "colors.css";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background1);
+}
+
+.ksi-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.ksi-container {
+  font-family: "Lato";
+  color: var(--text-color);
+  padding: 2% 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.ksi-title {
+  margin: 0 15% 5% 15%;
+  text-align: center;
+  font-size: calc(5vw + 10px);
+  text-align: center;
+  font-weight: 900;
+}
+
+.ksi-divider {
+  color: var(--hr-color);
+  margin: 0 20% 5% 20%;
+}
+
+.ksi-text {
+  display: none;
+}
+
+.ksi-image {
+  max-width: 48%;
+  height: auto;
+  background-color: var(--image-background);
+  border-radius: 50%;
+  margin: 0 0 5% 0;
+}
+
+@media screen and (min-width: 960px) {
+  .ksi-card {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ksi-container {
+    flex: 0 1 48%;
+    max-width: 60%;
+  }
+
+  .ksi-title {
+    margin: 0 0 10px 0;
+    text-align: left;
+    white-space: nowrap;
+    font-size: calc(2vw + 20px);
+  }
+
+  .ksi-divider {
+    color: var(--hr-color);
+    margin: 0 0 10px 0;
+  }
+
+  .ksi-text {
+    line-height: 1.5;
+    text-align: justify;
+    margin: 0;
+    display: flex;
+  }
+
+  .ksi-image {
+    max-width: 16%;
+    margin: 5% 0 5% 5%;
+  }
+}
